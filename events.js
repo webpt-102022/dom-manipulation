@@ -16,6 +16,8 @@ function stopColorChange() {
 }
 
 // btn.onclick = function () {}
+// I add an event listener to the element that will be clicked
+// And then it will execute the function
 startBtn.addEventListener('click', changeColor)
 stopBtn.addEventListener('click', stopColorChange)
 
