@@ -1,0 +1,46 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 30px;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+.remove {
+  color: blue;
+}
+
+h4 {
+  color: orange;
+}
+
+button#start,
+button#stop {
+  background-color: rgb(166, 164, 161);
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
