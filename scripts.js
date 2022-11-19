@@ -6,6 +6,7 @@ console.log(head)
 
 // Select by class name => returns an HTML collection
 const cards = document.getElementsByClassName('card');
+cards.forEach(elem => console.log(elem));
 
 for (let i = 0; i < cards.length; i++) { // I can iterate through HTML collection
   console.log(cards[i])
@@ -19,9 +20,10 @@ const btn = document.getElementById('cta-btn');
 
 // Select by query selector => returns a Nodelist (same)
 // I can search classes ('.class'), ids ('#id') or tags ('article')
-const collection = document.querySelector('#cta-btn');
+const collection = document.querySelectorAll('.card');
 console.log(collection)
-
+const arr2 = collection.map(elem => elem)
+console.log(arr2)
 // To apply array methods, I must transform into an array:
 const arr = Array.from(cards);
 arr.forEach(elem => console.log(elem))

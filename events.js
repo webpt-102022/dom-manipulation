@@ -40,3 +40,12 @@ function toggleInput() {
 }
 
 toggleBtn.addEventListener('click', toggleInput);
+
+
+function currying(param) {
+  let argum = param;
+  function toggleInput(argum) {
+    console.log(argum)
+  }
+  return toggleInput;
+}
